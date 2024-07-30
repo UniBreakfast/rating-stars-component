@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' style=' background:black'><text y='16' font-family='Trebuchet MS' font-weight='900' fill='orange'>UB</text></svg>">
+
+  <!--<link rel="stylesheet" href="reset.css">-->
+  <!--<link rel="stylesheet" href="base.css">-->
+  <link rel="stylesheet" href="style.css">
+  <!--<script type="module" src="app.js"></script>-->
+  <!-- <script src="script.js" defer></script> -->
+
+  <title>Rating Stars Component</title>
+</head>
+
+<body id="body" onload="dialog.showModal()">
+  <dialog id="dialog">
+    <form action="">
+      <h3>Rate the item</h3>
+
+      <label class="star" onclick="
+        event.preventDefault();
+        this.firstElementChild.checked = !this.firstElementChild.checked;
+      ">
+        <input type="radio" name="rating" value="1" >
+      </label>
+      <label class="star">
+        <input type="radio" name="rating" value="2">
+      </label>
+      <label class="star">
+        <input type="radio" name="rating" value="3">
+      </label>
+      <label class="star">
+        <input type="radio" name="rating" value="4">
+      </label>
+      <label class="star">
+        <input type="radio" name="rating" value="5">
+      </label>
+
+      <div>
+        <button type="submit">Rate</button>
+        <button type="button">Cancel</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+
+</html>
