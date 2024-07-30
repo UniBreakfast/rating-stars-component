@@ -15,10 +15,6 @@ dialog div {
   margin: 5px;
 }
 
-.star>input {
-  display: none;
-}
-
-.star:has(:checked, ~.star>:checked) {
+.star.active {
   background-image: url('full.svg');
 }
